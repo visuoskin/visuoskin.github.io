@@ -153,16 +153,19 @@
   </div>
 </section>
 
+  
 <section class="hero teaser">
   <div class="container is-max-desktop">
+    <div class="columns is-centered">
     <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline style="width: 50%;">
+      <video id="teaser" autoplay controls muted loop playsinline height="100%">
         <source src="./static/videos/total_tasks.mp4"
                 type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
         <span class="task decomposition">Tasks performed using the methodology of this paper are as follows.</span>
       </h2>
+    </div>
     </div>
   </div>
 </section>
@@ -198,78 +201,53 @@
   
 <section class="section">
   <div class="container is-max-desktop">
-
+    <!-- 첫 번째 행: Door-opening task와 Block-stacking task -->
     <div class="columns is-centered">
-
       <!-- Door-opening task. -->
       <div class="column">
         <div class="content">
           <h2 class="title is-3">Door-opening task</h2>
-          <p>
-            The door-opening task is decomposed into reaching, grasping, turning, and pulling, where all tasks except grasping are trained using Soft Actor-Critic and performed sequentially.
-          </p>
+          <p>The door-opening task is decomposed into reaching, grasping, turning, and pulling, where all tasks except grasping are trained using Soft Actor-Critic and performed sequentially.</p>
           <video id="door_opening" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/door_opening_task.mp4"
-                    type="video/mp4">
+            <source src="./static/videos/door_opening_task.mp4" type="video/mp4">
           </video>
         </div>
       </div>
-      <!--/ Door-opening task. -->
-
       <!-- Block-stacking task. -->
       <div class="column">
-        <h2 class="title is-3">Block-stacking task</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              The block-stacking task is decomposed into reaching, grasping, reaching, and putting, where all tasks except grasping and putting are trained using Soft Actor-Critic and performed sequentially.
-            </p>
-            <video id="block_stacking" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/block_stacking_task.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
+        <div class="content">
+          <h2 class="title is-3">Block-stacking task</h2>
+          <p>The block-stacking task is decomposed into reaching, grasping, reaching, and putting, where all tasks except grasping and putting are trained using Soft Actor-Critic and performed sequentially.</p>
+          <video id="block_stacking" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/block_stacking_task.mp4" type="video/mp4">
+          </video>
         </div>
       </div>
     </div>
-    <!--/ Block-stacking task -->
-
-    <!-- Round-nut assembly task. -->
+    <!-- 두 번째 행: Round-nut assembly task와 Square-nut assembly task -->
     <div class="columns is-centered">
-        <div class="column">
+      <!-- Round-nut assembly task. -->
+      <div class="column">
         <div class="content">
           <h2 class="title is-3">Round-nut assembly task</h2>
-          <p>
-            The nut-assembly task is decomposed into reaching, aligning, reaching, grasping, assembly and putting, where all tasks except grasping and putting are trained using Soft Actor-Critic and performed sequentially.
-          </p>
+          <p>The nut-assembly task is decomposed into reaching, aligning, reaching, grasping, assembly, and putting, where all tasks except grasping and putting are trained using Soft Actor-Critic and performed sequentially.</p>
           <video id="round-nut assembly" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/round_nut_assembly_task.mp4"
-                    type="video/mp4">
+            <source src="./static/videos/round_nut_assembly_task.mp4" type="video/mp4">
           </video>
         </div>
+      </div>
+      <!-- Square-nut assembly task. -->
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Square-nut assembly task</h2>
+          <p>Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect would be impossible without nerfies since it would require going through a wall.</p>
+          <video id="square-nut assembly" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/square_nut_assembly_task.mp4" type="video/mp4">
+          </video>
         </div>
+      </div>
     </div>
-    <!--/ Round-nut assembly task. -->
-    
-    <!-- Square-nut assembly task. -->
-        <div class="columns is-centered">
-          <div class="column is-full-width">
-            <div class="column">
-            <div class="content">
-              <h2 class="title is-3">Square-nut assembly task</h2>
-              <p>
-                Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-                would be impossible without nerfies since it would require going through a wall.
-              </p>
-              <video id="square-nut assembly" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/square_nut_assembly_task.mp4"
-                        type="video/mp4">
-              </video>
-            </div>
-            </div>
-          </div>
-        </div>
-        <!--/ Round-nut assembly task. -->
+  </div>
 
     <!-- Concurrent Work. -->
     <div class="columns is-centered">
