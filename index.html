@@ -148,13 +148,12 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
-      <div class="hero-body" style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh;">
-        <video id="teaser" autoplay controls muted loop playsinline style="width: 50%; height: auto;">
-          <source src="./static/videos/total_tasks.mp4"
-                  type="video/mp4">
+      <div class="column is-half has-text-centered"> <!-- 열 크기 조정 및 텍스트 정렬 추가 -->
+        <video id="teaser" autoplay controls muted loop playsinline style="max-width: 100%; height: auto;">
+          <source src="./static/videos/total_tasks.mp4" type="video/mp4">
         </video>
-        <h2 class="subtitle has-text-centered" style="width: 100%; margin-top: 20px;">
-          <span class="task decomposition">Tasks performed using the methodology of this paper are as follows.</span>
+        <h2 class="subtitle" style="margin-top: 20px;"> <!-- has-text-centered 제거 -->
+          Tasks performed using the methodology of this paper are as follows.
         </h2>
       </div>
     </div>
