@@ -148,18 +148,19 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
-    <div class="hero-body">
-       <video id="teaser" autoplay controls muted loop playsinline style="width: 50%; height: auto;">
-        <source src="./static/videos/total_tasks.mp4"
-                type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        <span class="task decomposition">Tasks performed using the methodology of this paper are as follows.</span>
-      </h2>
-    </div>
+      <div class="hero-body" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+        <video id="teaser" autoplay controls muted loop playsinline style="width: 25%; height: auto;">
+          <source src="./static/videos/total_tasks.mp4"
+                  type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered" style="width: 100%;">
+          <span class="task decomposition">Tasks performed using the methodology of this paper are as follows.</span>
+        </h2>
+      </div>
     </div>
   </div>
 </section>
+
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -197,7 +198,7 @@
       <div class="content">
         <h2 class="title is-3">Door-opening task</h2>
         <p>The door-opening task is decomposed into reaching, grasping, turning, and pulling, where all tasks except grasping are trained using Soft Actor-Critic and performed sequentially.</p>
-        <video id="door_opening" autoplay controls muted loop playsinline style="height: 300px; width: 100%;">
+        <video id="door_opening" autoplay controls muted loop playsinline height="100%">
           <source src="./static/videos/door_opening_task.mp4" type="video/mp4">
         </video>
       </div>
@@ -206,8 +207,8 @@
     <div class="column">
       <div class="content">
         <h2 class="title is-3">Block-stacking task</h2>
-        <p>The block-stacking task is decomposed into reaching, grasping, reaching, and putting, where all tasks except grasping and putting are trained using Soft Actor-Critic and performed sequentially.</p>
-        <video id="block_stacking" autoplay controls muted loop playsinline style="height: 300px; width: 100%;">
+        <p>The block-stacking task is decomposed into reaching, grasping, reaching, and putting, where all tasks except grasping and putting are trained using SAC and performed sequentially.</p>
+        <video id="block_stacking" autoplay controls muted loop playsinline height="100%">
           <source src="./static/videos/block_stacking_task.mp4" type="video/mp4">
         </video>
       </div>
@@ -218,7 +219,7 @@
       <div class="column">
         <div class="content">
           <h2 class="title is-3">Round-nut assembly task</h2>
-          <p>The nut-assembly task is decomposed into reaching, aligning, reaching, grasping, assembly, and putting, where all tasks except grasping and putting are trained using Soft Actor-Critic and performed sequentially.</p>
+          <p>The nut-assembly task is decomposed into reaching, aligning, reaching, grasping, assembly, and putting, where all tasks except grasping and putting are trained using SAC and performed sequentially.</p>
           <video id="round-nut assembly" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/round_nut_assembly_task.mp4" type="video/mp4">
           </video>
@@ -228,7 +229,7 @@
       <div class="column">
         <div class="content">
           <h2 class="title is-3">Square-nut assembly task</h2>
-          <p>The nut-assembly task is decomposed into reaching, aligning, reaching, grasping, assembly, and putting, where all tasks except grasping and putting are trained using Soft Actor-Critic and performed sequentially.</p>
+          <p>The nut-assembly task is decomposed into reaching, aligning, reaching, grasping, assembly, and putting, where all tasks except grasping and putting are trained using SAC and performed sequentially.</p>
           <video id="square-nut assembly" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/square_nut_assembly_task.mp4" type="video/mp4">
           </video>
