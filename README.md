@@ -1,14 +1,18 @@
-# Nerfies
+# Reinforcement Learning for Automation of High-Level Tasks
 
-This is the repository that contains source code for the [Nerfies website](https://nerfies.github.io).
+This is the repository that contains source code for the [Reinforcement Learning for Automation of High-Level Tasks website](https://nineman-yu.github.io).
 
-If you find Nerfies useful for your work please cite:
+If you find Reinforcement Learning for Automation of High-Level Tasks useful for your work please cite:
 ```
-@article{park2021nerfies
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+@article{kwon2024reinforcement,
+  title={Reinforcement Learning with Task Decomposition and Task-Specific Reward System for Automation of High-Level Tasks},
+  author={Kwon, Gunam and Kim, Byeongjun and Kwon, Nam Kyu},
+  journal={Biomimetics},
+  volume={9},
+  number={4},
+  pages={196},
+  year={2024},
+  publisher={MDPI}
 }
 ```
 
