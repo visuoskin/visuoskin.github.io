@@ -149,7 +149,7 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered">
     <div class="hero-body">
-      <video id="teaser" autoplay controls muted loop playsinline height="100%">
+       <video id="teaser" autoplay controls muted loop playsinline style="width: 50%; height: auto;">
         <source src="./static/videos/total_tasks.mp4"
                 type="video/mp4">
       </video>
@@ -192,27 +192,24 @@
   
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- 첫 번째 행: Door-opening task와 Block-stacking task -->
-    <div class="columns is-centered">
-      <!-- Door-opening task. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Door-opening task</h2>
-          <p>The door-opening task is decomposed into reaching, grasping, turning, and pulling, where all tasks except grasping are trained using Soft Actor-Critic and performed sequentially.</p>
-          <video id="door_opening" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/door_opening_task.mp4" type="video/mp4">
-          </video>
-        </div>
+    <!-- Door-opening task. -->
+    <div class="column">
+      <div class="content">
+        <h2 class="title is-3">Door-opening task</h2>
+        <p>The door-opening task is decomposed into reaching, grasping, turning, and pulling, where all tasks except grasping are trained using Soft Actor-Critic and performed sequentially.</p>
+        <video id="door_opening" autoplay controls muted loop playsinline style="height: 300px; width: 100%;">
+          <source src="./static/videos/door_opening_task.mp4" type="video/mp4">
+        </video>
       </div>
-      <!-- Block-stacking task. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Block-stacking task</h2>
-          <p>The block-stacking task is decomposed into reaching, grasping, reaching, and putting, where all tasks except grasping and putting are trained using Soft Actor-Critic and performed sequentially.</p>
-          <video id="block_stacking" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/block_stacking_task.mp4" type="video/mp4">
-          </video>
-        </div>
+    </div>
+    <!-- Block-stacking task. -->
+    <div class="column">
+      <div class="content">
+        <h2 class="title is-3">Block-stacking task</h2>
+        <p>The block-stacking task is decomposed into reaching, grasping, reaching, and putting, where all tasks except grasping and putting are trained using Soft Actor-Critic and performed sequentially.</p>
+        <video id="block_stacking" autoplay controls muted loop playsinline style="height: 300px; width: 100%;">
+          <source src="./static/videos/block_stacking_task.mp4" type="video/mp4">
+        </video>
       </div>
     </div>
     <!-- 두 번째 행: Round-nut assembly task와 Square-nut assembly task -->
@@ -231,7 +228,7 @@
       <div class="column">
         <div class="content">
           <h2 class="title is-3">Square-nut assembly task</h2>
-          <p>Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect would be impossible without nerfies since it would require going through a wall.</p>
+          <p>The nut-assembly task is decomposed into reaching, aligning, reaching, grasping, assembly, and putting, where all tasks except grasping and putting are trained using Soft Actor-Critic and performed sequentially.</p>
           <video id="square-nut assembly" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/square_nut_assembly_task.mp4" type="video/mp4">
           </video>
@@ -240,27 +237,26 @@
     </div>
   </div>
 
-    <!-- Concurrent Work. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
+  <!-- Concurrent Work. -->
+  <div class="columns is-centered">
+    <div class="column is-full-width">
+      <h2 class="title is-3">Related Links</h2>
 
-        <div class="content has-text-justified">
-          <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://www.mdpi.com/2313-7673/8/2/240">The Task Decomposition and Dedicated Reward-System-Based Reinforcement Learning Algorithm for Pick-and-Place</a> serves as the foundation of the methodology outlined in the paper 'Reinforcement Learning with Task Decomposition and Task-Specific Reward System for Automation of High-Level Tasks.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2102.04022">Towards Hierarchical Task Decomposition using Deep Reinforcement Learning for Pick and Place Subtasks</a> introduces pick-and-place divided into approach, manipulate, and retract, and successfully performs pick-and-place using DDPG and HER.
-          </p>
-        </div>
+      <div class="content has-text-justified">
+        <p>
+          There's a lot of excellent work that was introduced around the same time as ours.
+        </p>
+        <p>
+          <a href="https://www.mdpi.com/2313-7673/8/2/240">The Task Decomposition and Dedicated Reward-System-Based Reinforcement Learning Algorithm for Pick-and-Place</a> serves as the foundation of the methodology outlined in the paper 'Reinforcement Learning with Task Decomposition and Task-Specific Reward System for Automation of High-Level Tasks.
+        </p>
+        <p>
+          <a href="https://arxiv.org/abs/2102.04022">Towards Hierarchical Task Decomposition using Deep Reinforcement Learning for Pick and Place Subtasks</a> introduces pick-and-place divided into approach, manipulate, and retract, and successfully performs pick-and-place using DDPG and HER.
+        </p>
       </div>
     </div>
-    <!--/ Concurrent Work. -->
-
   </div>
+  <!--/ Concurrent Work. -->
+</div>
 </section>
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
@@ -286,7 +282,7 @@
          href="./static/videos/high-level_paper.pdf">
         <i class="fas fa-file-pdf"></i>
       </a>
-      <a class="icon-link" href="https://github.com/nineman-YU" disabled>
+      <a class="icon-link" href="https://github.com/nineman-YU/Task_decomposition" disabled>
         <i class="fab fa-github"></i>
       </a>
     </div>
