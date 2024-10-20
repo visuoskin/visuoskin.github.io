@@ -217,98 +217,69 @@ real world.
 
 <section class="section">
   <div class="container is-max-desktop">
-    <h2 style="margin-bottom: 1em;" class="title is-3">ViSk Framework and Architecture</h2>
-
-    <div class="columns is-centered">
-        <div class="column">
-          <div class="content has-text-centered">
-            <img src="./static/images/fig1-final-compressed-1.png" alt="ViSk Figure 1"/>
-          </div>
-        </div>
-        <div class="column">
-          <div class="content has-text-centered">
-            <img src="./static/images/fig2-compressed-1.png" alt="ViSk Figure 2"/>
-          </div>
-        </div>
-    </div>
-  </div>
-</section>
-
-<div class="columns is-centered">
-  <!-- Policy learning experiments -->
-  <div class="column is-full-width">
-    <h2 style="margin-bottom: 1em;" class="title is-3">Policy Learning for 4 Precise Tasks</h2>
-    <div class="content">
-      <p>The following videos are learnt ViSk policy rollouts being executed on the robot at 1x speed. We run 10 evaluations at unseen positions, across 3 seeds, and report the results in the next section.</p>
-    </div>
-  </div>
-</div>
-
-<!-- First row with two videos -->
-<div class="columns is-centered">
-  <div class="column">
-    <div class="content has-text-centered">
-      <h3 class="title is-4">Plug Insertion</h3>
-      <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-        <source src="./static/videos/plug_insertion.mp4" type="video/mp4">
-      </video>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="content has-text-centered">
-      <h3 class="title is-4">USB Insertion</h3>
-      <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-        <source src="./static/videos/usb_insertion.mp4" type="video/mp4">
-      </video>
-    </div>
-  </div>
-</div>
-
-<!-- Second row with two videos -->
-<div class="columns is-centered">
-  <div class="column">
-    <div class="content has-text-centered">
-      <h3 class="title is-4">Card Swiping</h3>
-      <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-        <source src="./static/videos/card_swiping.mp4" type="video/mp4">
-      </video>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="content has-text-centered">
-      <h3 class="title is-4">Book Retrieval</h3>
-      <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-        <source src="./static/videos/book_retrieval.mp4" type="video/mp4">
-      </video>
-    </div>
-  </div>
-</div>
-
-
-    <div class="columns is-centered">
-      <!-- Policy learning experiments -->
-       <div class="column is-full-width">
-        <h2 class="title is-3">Experiment Results</h2>
-      </div>
-    </div>
-
+    <h2 class="title is-3" style="margin-bottom: 1em;">ViSk Framework and Architecture</h2>
+    
     <div class="columns is-centered">
       <div class="column">
-        <div class="content">
-          <img src="./static/images/policy.png" alt="Policy Performance out of 30 rollouts" />
-        </div>
+        <figure class="content has-text-centered">
+          <img src="./static/images/fig1-final-compressed-1.png" alt="ViSk Figure 1" class="full-width-media" loading="lazy"/>
+          <figcaption>ViSk Figure 1</figcaption>
+        </figure>
       </div>
-      <div class="column is-full-width">
-        <div class="content">
-          <!-- <h3 class="title is-4">Comparison Across Sensors -- Plug Insertion</h3> -->
-          <img src="./static/images/sensor.png" alt="Comparison across sensors" />
-        </div>
+      <div class="column">
+        <figure class="content has-text-centered">
+          <img src="./static/images/fig2-compressed-1.png" alt="ViSk Figure 2" class="full-width-media" loading="lazy"/>
+          <figcaption>ViSk Figure 2</figcaption>
+        </figure>
+      </div>
+    </div>
+    
+    <!-- Policy Learning Section -->
+    <div class="columns is-centered">
+      <div class="column">
+        <h2 class="title is-3" style="margin-bottom: 1em;">Policy Learning for 4 Precise Tasks</h2>
+        <p>The following videos are learnt ViSk policy rollouts being executed on the robot at 1x speed...</p>
+      </div>
+    </div>
+    
+    <!-- Videos -->
+    <div class="columns is-centered">
+      <div class="column">
+        <figure class="content has-text-centered">
+          <h3 class="title is-4">Plug Insertion</h3>
+          <video id="plug-insertion" autoplay controls muted loop playsinline class="full-width-media" loading="lazy">
+            <source src="./static/videos/plug_insertion.mp4" type="video/mp4">
+          </video>
+        </figure>
+      </div>
+      <div class="column">
+        <figure class="content has-text-centered">
+          <h3 class="title is-4">USB Insertion</h3>
+          <video id="usb-insertion" autoplay controls muted loop playsinline class="full-width-media" loading="lazy">
+            <source src="./static/videos/usb_insertion.mp4" type="video/mp4">
+          </video>
+        </figure>
+      </div>
+    </div>
+    
+    <!-- Experiment Results -->
+    <div class="columns is-centered">
+      <div class="column">
+        <figure class="content has-text-centered">
+          <img src="./static/images/policy.png" alt="Policy Performance out of 30 rollouts" class="full-width-media" loading="lazy"/>
+          <figcaption>Policy Performance out of 30 rollouts</figcaption>
+        </figure>
+      </div>
+      <div class="column">
+        <figure class="content has-text-centered">
+          <img src="./static/images/sensor.png" alt="Comparison across sensors" class="full-width-media" loading="lazy"/>
+          <figcaption>Comparison Across Sensors</figcaption>
+        </figure>
       </div>
     </div>
   </div>
 </section>
+
 
   
 <!-- Footer -->
